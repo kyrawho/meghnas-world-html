@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>meghna's world</title>
+    <meta name="description" content="a soft birthday world for meghna" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="world-page">
+      <section class="world-frame" aria-label="meghna's world">
+        <section class="lock-screen" data-screen="lock" aria-label="lock screen">
+          <div class="sticker-cloud sticker-cloud-one" aria-hidden="true"></div>
+          <div class="sticker-cloud sticker-cloud-two" aria-hidden="true"></div>
+          <div class="decor-star lock-star-a" aria-hidden="true"></div>
+          <div class="decor-star lock-star-b" aria-hidden="true"></div>
+          <div class="decor-heart lock-heart-a" aria-hidden="true"></div>
+          <p class="lock-time" data-lock-time>00:00</p>
+
+          <div class="lock-centerpiece" aria-hidden="true">
+            <div class="emoji-world">🌎</div>
+            <div class="decor-star star-icon"></div>
+            <div class="decor-heart heart-icon"></div>
+          </div>
+
+          <h1 class="lock-title">meghna's world</h1>
+          <button class="swipe-button" type="button" data-unlock>
+            <span class="swipe-handle" aria-hidden="true"></span>
+            <span>swipe up</span>
+          </button>
+        </section>
+
+        <section class="phone-layer hidden" data-screen="home" aria-label="home screen">
+          <section class="home-screen">
+            <div class="home-wallpaper" aria-hidden="true">
+              <div class="wall-cloud wall-cloud-a"></div>
+              <div class="wall-cloud wall-cloud-b"></div>
+              <div class="decor-star wall-star"></div>
+              <div class="decor-star wall-star-small"></div>
+              <div class="decor-heart wall-heart"></div>
+              <div class="decor-heart wall-heart-small"></div>
+            </div>
+
+            <div class="home-name-card">
+              <div class="emoji-world home-mini-earth" aria-hidden="true">🌎</div>
+              <p>meghna's world</p>
+            </div>
+
+            <nav class="app-grid" aria-label="apps" data-app-grid></nav>
+
+            <footer class="home-credits" aria-label="site credits">
+              <p>♉ Launched for Meghna's 27th Birthday</p>
+              <p>🧰 Last update <span data-last-update></span></p>
+              <p>💌 Made with love by <a href="https://x.com/kyrawhoo" target="_blank" rel="noopener noreferrer">@kyrawhoo</a></p>
+              <p>👯‍♀️ Credits: Thank you to Ana, Cassie, Emma, Ishaani, Jake, Vaish, and Vick for all of your thoughtful contributions!</p>
+            </footer>
+          </section>
+
+          <section class="app-window hidden" data-app-window aria-live="polite">
+            <header class="app-window-header">
+              <button class="round-icon-button" type="button" data-close-app aria-label="home">
+                <span aria-hidden="true">home</span>
+              </button>
+              <h2 data-app-title></h2>
+            </header>
+            <div class="app-window-content" data-app-content></div>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
