@@ -1,9 +1,12 @@
+// Update this whenever the site content changes.
+const lastUpdatedText = "05/17/2026 @ 2:04pm";
+
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
   { id: "photos", label: "photos", color: "#cfe2c7", icon: "📷" },
   { id: "notes", label: "notes", color: "#fff0a8", icon: "✏️" },
   { id: "blahaj", label: "blåhaj", color: "#b8ddf0", icon: "🦈" },
-  { id: "rayeToday", label: "raye today", color: "#ffe4df", icon: "💋" }
+  { id: "rayeToday", label: "raye today", color: "#ffe4df", icon: "💋" },
   { id: "credits", label: "credits", color: "#ffe4df", icon: "❣️" }
 ];
 
@@ -537,9 +540,6 @@ const rayeMoodData = {
     ]
   }
 };
-
-// Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 2:04pm";
 
 const apps = {
   messages: {
