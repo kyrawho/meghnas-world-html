@@ -37,6 +37,8 @@ body {
     system-ui,
     sans-serif;
   letter-spacing: 0;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 button {
@@ -1135,35 +1137,65 @@ img {
 
 @media (max-width: 520px) {
   .world-page {
-    padding: 0;
+    min-height: 100dvh;
+    padding: 14px;
+    place-items: center;
   }
 
   .world-frame {
-    width: 100vw;
-    height: 100dvh;
-    min-height: 640px;
-    border: 0;
-    border-radius: 0;
-    outline: 0;
+    width: min(430px, calc(100vw - 28px));
+    height: min(860px, calc(100dvh - 28px));
+    min-height: 680px;
+    border: 3px solid var(--ink);
+    border-radius: 38px;
+    outline: 8px solid rgba(255, 250, 240, 0.86);
   }
 
   .home-screen {
-    padding: 26px 18px 20px;
+    gap: 18px;
+    padding: 32px 22px 24px;
+  }
+
+  .home-name-card {
+    transform: none;
+    max-width: 72%;
+    padding: 8px 16px 8px 9px;
+  }
+
+  .home-mini-earth {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+  }
+
+  .home-name-card p {
+    font-size: 1.02rem;
+    white-space: nowrap;
   }
 
   .app-window {
-    inset: 0;
-    border: 0;
-    border-radius: 0;
+    inset: 12px;
+    border: 3px solid var(--ink);
+    border-radius: 30px;
   }
 
   .app-grid {
-    gap: 16px 12px;
+    gap: 18px 16px;
+    margin-top: 18px;
   }
 
   .app-icon-tile {
-    width: min(35vw, 128px);
-    border-radius: 24px;
+    width: clamp(96px, 28vw, 124px);
+    border-radius: 28px;
+  }
+
+  .app-icon-label {
+    font-size: 0.86rem;
+  }
+
+  .home-credits {
+    font-size: 0.69rem;
+    padding: 10px 12px;
   }
 
   .photo-grid {
