@@ -1,5 +1,5 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 3:07pm";
+const lastUpdatedText = "05/17/2026 @ 3:22pm";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
@@ -612,16 +612,19 @@ const appContent = document.querySelector("[data-app-content]");
 const homeScreen = document.querySelector("[data-screen='home']");
 const lockScreen = document.querySelector("[data-screen='lock']");
 const lockTime = document.querySelector("[data-lock-time]");
-const unlockButton = document.querySelector("[data-unlock]");
 const lastUpdate = document.querySelector("[data-last-update]");
 
-unlockButton.addEventListener("click", unlockPhone);
-lockScreen.addEventListener("pointerdown", startUnlockSwipe);
-lockScreen.addEventListener("touchstart", startUnlockTouch, { passive: true });
-window.addEventListener("pointerup", finishUnlockSwipe);
-window.addEventListener("touchend", finishUnlockTouch);
-window.addEventListener("pointercancel", cancelUnlockSwipe);
-lockScreen.addEventListener("wheel", handleUnlockWheel, { passive: true });
+const passcode = ["🎂", "🎈", "♉", "🎂"];
+let enteredPasscode = [];
+
+const passcodeDots = document.querySelectorAll("[data-passcode-dot]");
+const passcodeKeys = document.querySelectorAll("[data-passcode-key]");
+const emojiKeypad = document.querySelector("[data-emoji-keypad]");
+
+passcodeKeys.forEach((button) => {
+  button.addEventListener("click", () => handlePasscodeKey(button.dataset.passcodeKey));
+});
+
 document.querySelector("[data-close-app]").addEventListener("click", closeApp);
 
 renderAppGrid();
@@ -666,6 +669,44 @@ function updateClock() {
 function unlockPhone() {
   lockScreen.classList.add("hidden");
   homeScreen.classList.remove("hidden");
+}
+
+function handlePasscodeKey(emoji) {
+  if (enteredPasscode.length >= passcode.length) {
+    return;
+  }
+
+  enteredPasscode.push(emoji);
+  updatePasscodeDots();
+
+  if (enteredPasscode.length === passcode.length) {
+    checkPasscode();
+  }
+}
+
+function updatePasscodeDots() {
+  passcodeDots.forEach((dot, index) => {
+    dot.classList.toggle("filled", index < enteredPasscode.length);
+  });
+}
+
+function checkPasscode() {
+  const isCorrect = passcode.every((emoji, index) => emoji === enteredPasscode[index]);
+
+  if (isCorrect) {
+    unlockPhone();
+    return;
+  }
+
+  emojiKeypad.classList.remove("passcode-shake");
+  void emojiKeypad.offsetWidth;
+  emojiKeypad.classList.add("passcode-shake");
+
+  window.setTimeout(() => {
+    enteredPasscode = [];
+    updatePasscodeDots();
+    emojiKeypad.classList.remove("passcode-shake");
+  }, 420);
 }
 
 function startUnlockSwipe(event) {
