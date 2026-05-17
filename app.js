@@ -1,5 +1,5 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 2:29pm";
+const lastUpdatedText = "05/17/2026 @ 2:34pm";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
@@ -193,7 +193,7 @@ const photoFiles = [
   "rizzy malai.jpg",
   "spooky spooky.jpg",
   "spooky with vaish.jpg",
-  "sunny ish.jpg"
+  "sunny ish.jpg",
   "borth.jpeg",
   "crunchy.jpeg",
   "flower power.jpeg",
@@ -515,48 +515,48 @@ const rayeMoodData = {
       }
     ]
   },
-  cryingInEyeliner: {
-    label: "crying in eyeliner",
-    emoji: "🖤",
-    lyrics: [
-      {
-        lyric: "I may cry through the night",
-        song: "JOY!",
-        album: "THIS MUSIC MAY CONTAIN HOPE.",
-        year: "2026",
-        spotifyUrl: spotifySearchUrl("RAYE JOY")
-      },
-      {
-        lyric: "Crying in a stranger's car",
-        song: "WINTER WOMAN.",
-        album: "THIS MUSIC MAY CONTAIN HOPE.",
-        year: "2026",
-        spotifyUrl: spotifySearchUrl("RAYE WINTER WOMAN")
-      },
-      {
-        lyric: "I'll be sad and beautiful",
-        song: "WINTER WOMAN.",
-        album: "THIS MUSIC MAY CONTAIN HOPE.",
-        year: "2026",
-        spotifyUrl: spotifySearchUrl("RAYE WINTER WOMAN")
-      },
-      {const apps
-        lyric: "Once you see my black mascara",
-        song: "Black Mascara.",
-        album: "My 21st Century Blues",
-        year: "2023",
-        spotifyUrl: spotifySearchUrl("RAYE Black Mascara")
-      },
-      {
-        lyric: "Lying on the bathroom floor",
-        song: "Love Me Again",
-        album: "Euphoric Sad Songs",
-        year: "2020",
-        spotifyUrl: ""
-      }
-    ]
-  }
-};
+
+cryingInEyeliner: {
+  label: "crying in eyeliner",
+  emoji: "🖤",
+  lyrics: [
+    {
+      lyric: "I may cry through the night",
+      song: "JOY!",
+      album: "THIS MUSIC MAY CONTAIN HOPE.",
+      year: "2026",
+      spotifyUrl: spotifySearchUrl("RAYE JOY")
+    },
+    {
+      lyric: "Crying in a stranger's car",
+      song: "WINTER WOMAN.",
+      album: "THIS MUSIC MAY CONTAIN HOPE.",
+      year: "2026",
+      spotifyUrl: spotifySearchUrl("RAYE WINTER WOMAN")
+    },
+    {
+      lyric: "I'll be sad and beautiful",
+      song: "WINTER WOMAN.",
+      album: "THIS MUSIC MAY CONTAIN HOPE.",
+      year: "2026",
+      spotifyUrl: spotifySearchUrl("RAYE WINTER WOMAN")
+    },
+    {
+      lyric: "Once you see my black mascara",
+      song: "Black Mascara.",
+      album: "My 21st Century Blues",
+      year: "2023",
+      spotifyUrl: spotifySearchUrl("RAYE Black Mascara")
+    },
+    {
+      lyric: "Lying on the bathroom floor",
+      song: "Love Me Again",
+      album: "Euphoric Sad Songs",
+      year: "2020",
+      spotifyUrl: ""
+    }
+  ]
+}
 
 const apps = {
   messages: {
