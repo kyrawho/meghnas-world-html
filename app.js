@@ -1,5 +1,5 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 2:34pm";
+const lastUpdatedText = "05/17/2026 @ 2:39pm";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
@@ -557,6 +557,7 @@ cryingInEyeliner: {
     }
   ]
 }
+};
 
 const apps = {
   messages: {
@@ -614,10 +615,8 @@ const lastUpdate = document.querySelector("[data-last-update]");
 
 unlockButton.addEventListener("click", unlockPhone);
 lockScreen.addEventListener("pointerdown", startUnlockSwipe);
-lockScreen.addEventListener("mousedown", startUnlockSwipe);
 lockScreen.addEventListener("touchstart", startUnlockTouch, { passive: true });
 window.addEventListener("pointerup", finishUnlockSwipe);
-window.addEventListener("mouseup", finishUnlockSwipe);
 window.addEventListener("touchend", finishUnlockTouch);
 window.addEventListener("pointercancel", cancelUnlockSwipe);
 lockScreen.addEventListener("wheel", handleUnlockWheel, { passive: true });
@@ -668,6 +667,10 @@ function unlockPhone() {
 }
 
 function startUnlockSwipe(event) {
+  if (event.target.closest("[data-unlock]")) {
+    return;
+  }
+
   state.unlockStartY = event.clientY;
 }
 
