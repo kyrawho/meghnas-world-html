@@ -1,11 +1,11 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 2:26pm";
+const lastUpdatedText = "05/17/2026 @ 2:51pm";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
   { id: "photos", label: "photos", color: "#cfe2c7", icon: "📷" },
   { id: "notes", label: "notes", color: "#fff0a8", icon: "✏️" },
-  { id: "blahaj", label: "blåhaj", color: "#7EC0E6", icon: "🦈" },
+  { id: "blahaj", label: "blåhaj", color: "#98D3F5", icon: "🦈" },
   { id: "rayeToday", label: "raye today", color: "#ffe4df", icon: "💋" },
   { id: "credits", label: "credits", color: "#E4DFF2", icon: "👯" }
 ];
@@ -579,7 +579,7 @@ const apps = {
   },
   blahaj: {
     title: "blåhaj",
-    accent: "#7EC0E6",
+    accent: "#98D3F5",
     render: renderBlahaj
   },
   rayeToday: {
