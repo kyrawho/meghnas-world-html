@@ -1,5 +1,5 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/17/2026 @ 3:22pm";
+const lastUpdatedText = "05/17/2026 @ 3:39pm";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
@@ -1029,12 +1029,12 @@ function renderCredits() {
         <h3>thank you</h3>
 
         <p>
-          Thank you to Ana, Cassie, Emma, Ishaani, Jake, Vaish, and Vick for all of your thoughtful contributions!
+          thank you to ana, cassie, emma, ishaani, jake, vaish, and vick for all of your thoughtful contributions!
         </p>
 
         <p class="credits-signoff">
-          We love you, Meghna!
-        </p>
+          we love you, meghna!
+        </p
       </article>
     </div>
   `;
