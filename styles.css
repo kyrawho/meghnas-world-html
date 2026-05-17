@@ -1229,7 +1229,7 @@ img {
 
 .credits-card {
   width: min(100%, 34rem);
-  background: #fffaf0;
+  background: #fff0a8;
   border: 0.22rem solid #48616a;
   border-radius: 2rem;
   padding: 2rem 1.6rem;
@@ -1246,12 +1246,12 @@ img {
   background: #ffe4df;
   border: 0.18rem solid #48616a;
   border-radius: 999px;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .credits-card h3 {
   margin: 0 0 1rem;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(1.2rem, 3.6vw, 1.8rem);
   line-height: 1;
   color: #48616a;
 }
@@ -1259,7 +1259,7 @@ img {
 .credits-card p {
   margin: 0 auto;
   max-width: 26rem;
-  font-size: clamp(1.05rem, 3.5vw, 1.45rem);
+  font-size: clamp(0.63rem, 2.1vw, 0.87rem);
   line-height: 1.45;
   color: #48616a;
 }
