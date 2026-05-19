@@ -399,16 +399,14 @@ img {
   gap: 12px;
   width: fit-content;
   max-width: 100%;
-  border: 2px solid var(--line);
-  border-radius: 999px;
-  background: rgba(255, 250, 240, 0.78);
   padding: 8px 16px 8px 9px;
 }
 
 .home-mini-earth {
   width: 48px;
   height: 48px;
-  border-width: 3px;
+  border: 0;
+  background: transparent;
   font-size: 1.75rem;
 }
 
