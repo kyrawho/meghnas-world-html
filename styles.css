@@ -422,9 +422,9 @@ img {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
-  column-gap: 80px;
-  row-gap: 18px;
-  margin-top: 6px;
+  column-gap: 44px;
+  row-gap: 16px;
+  margin-top: -4px;
 }
 
 .app-icon-button {
@@ -1185,9 +1185,9 @@ img {
   .app-grid {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    column-gap: 56px;
-    row-gap: 18px;
-    margin-top: 1px;
+    column-gap: 68px;
+    row-gap: 16px;
+    margin-top: -6px;
   }
 
   .app-icon-tile {
@@ -1242,8 +1242,9 @@ img {
   }
 
   .app-grid {
-    gap: 11px 12px;
-    margin-top: 8px;
+    column-gap: 40px;
+    row-gap: 11px;
+    margin-top: -4px;
   }
 
   .app-icon-label {
@@ -1464,4 +1465,12 @@ img {
 
 .credits-break-large {
   height: 1.2rem;
+}
+
+@media (max-width: 520px) and (max-height: 720px) {
+  .app-grid {
+    column-gap: 64px;
+    row-gap: 11px;
+    margin-top: -6px;
+  }
 }
