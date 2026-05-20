@@ -217,7 +217,12 @@ const photoFiles = [
   "its giving arthur.jpeg",
   "what a long white hair.jpeg",
   "sheldon 4ever.jpeg",
-  "bandana besties.jpeg"
+  "bandana besties.jpeg",
+  "the medsties.jpeg",
+  "big smiles.jpeg",
+  "ana bday.jpeg",
+  "canoe.jpeg",
+  "gaudi.jpeg"
 ];
 
 const photos = photoFiles.map((fileName, index) => {
