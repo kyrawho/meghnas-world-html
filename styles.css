@@ -467,10 +467,10 @@ img {
   display: grid;
   gap: 5px;
   margin-top: auto;
-  border: 2px solid rgba(72, 96, 106, 0.38);
-  border-radius: 16px;
-  background: rgba(255, 250, 240, 0.58);
-  padding: 10px 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
   font-size: 0.69rem;
   font-weight: 850;
   line-height: 1.25;
