@@ -1042,20 +1042,23 @@ function renderCredits() {
           thank you to ana, cassie, emma, ishaani, jake, vaish, and vick for all of your thoughtful contributions!
         </p>
 
+        <div class="credits-break" aria-hidden="true"></div>
+
         <p>
           meghna, hope you enjoyed this little time capsule at 27 :)
         </p>
+
+        <div class="credits-break credits-break-large" aria-hidden="true"></div>
 
         <p class="credits-signoff">
           we love you, meghna!
         </p>
 
+        <div class="credits-break" aria-hidden="true"></div>
+
         <div class="credits-meta" aria-label="site credits">
           <p>♉ Launched for Meghna's 27th Birthday</p>
-          <p>
-            💌 Made with love by
-            <a href="https://x.com/kyrawhoo" target="_blank" rel="noopener noreferrer">@kyrawhoo</a>
-          </p>
+          <p>💌 Made with love by <a href="https://x.com/kyrawhoo" target="_blank" rel="noopener noreferrer">@kyrawhoo</a></p>
         </div>
       </article>
     </div>
