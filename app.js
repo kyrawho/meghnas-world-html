@@ -1052,7 +1052,6 @@ function renderCredits() {
 
         <div class="credits-meta" aria-label="site credits">
           <p>♉ Launched for Meghna's 27th Birthday</p>
-          <p>🧰 Last update 5/19/26 @ 9:53pm EDT
           <p>
             💌 Made with love by
             <a href="https://x.com/kyrawhoo" target="_blank" rel="noopener noreferrer">@kyrawhoo</a>
