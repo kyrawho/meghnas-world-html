@@ -1185,7 +1185,7 @@ img {
   .app-grid {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    column-gap: 60px;
+    column-gap: 44px;
     row-gap: 16px;
     margin-top: -6px;
   }
@@ -1469,7 +1469,7 @@ img {
 
 @media (max-width: 520px) and (max-height: 720px) {
   .app-grid {
-    column-gap: 55px;
+    column-gap: 44px;
     row-gap: 11px;
     margin-top: -6px;
   }
