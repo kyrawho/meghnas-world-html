@@ -222,7 +222,7 @@ const photoFiles = [
   "big smiles.jpeg",
   "ana bday.jpeg",
   "canoe.jpeg",
-  "gaudi.jpeg"
+  "gaudiii.jpeg"
 ];
 
 const photos = photoFiles.map((fileName, index) => {
