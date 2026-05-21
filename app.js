@@ -1,5 +1,5 @@
 // Update this whenever the site content changes.
-const lastUpdatedText = "05/20/2026 @ 7:11pm EDT";
+const lastUpdatedText = "05/20/2026 @ 11:42pm EDT";
 
 const appButtons = [
   { id: "messages", label: "messages", color: "#ffd4b8", icon: "💬" },
@@ -16,7 +16,7 @@ const messages = [
     friendName: "emma",
     status: "unread",
     preview: "HAPPY BIRTHDAY MEGHNA!!!",
-    imageSrc: "messages/emma message.JPEG",
+    imageSrc: "messages/emma_message.jpeg",
     paperColor: "#fff0a8",
     stickerColor: "#cfe2c7",
     detailNote: "love, emma"
